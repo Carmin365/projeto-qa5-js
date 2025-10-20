@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Performance de Rede</title>
+    <link rel="stylesheet" href="estilo.css">
+</head><br><br>
+<body>
+    <header>
+        <h1>Teste de Performance em Diferentes Redes</h1>
+    </header><br><br>
+    <div class="container">
+        <h2>Simular Conexão:</h2>
+        <select id="network-profile">
+            <option value="fast">Banda Larga (Rápido)</option>
+            <option value="3g">3G Mediano (Normal)</option>
+            <option value="slow">2G/Satélite (Lento - Qualidade Baixa)</option>
+        </select>
+        <button onclick="simulateLoad()">Simular Carregamento</button>
+
+        <div id="results" style="margin-top: 20px;">
+            <h3>Resultados da Simulação:</h3>
+            <p>Perfil Testado: <span id="tested-profile">--</span></p>
+            <p>Tempo de Carregamento: <span id="load-time">--</span></p>
+            <p>Status de Performance (Produto): <span id="performance-status">--</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
